@@ -1,0 +1,622 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMessages (20090521122231)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author" varchar(255), "message" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090521122231')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("messages")[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:11:59) [GET]
+  [4;36;1mMessage Load (0.9ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Completed in 96ms (View: 91, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:12:03) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:12:03', 'aa', '2009-05-21 13:12:03')[0m
+Rendered messages/_message (47.6ms)
+Completed in 121ms (View: 99, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:12:56) [GET]
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (2.4ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:12:59) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:12:59', 'aa', '2009-05-21 13:12:59')[0m
+Rendered messages/_message (0.3ms)
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:13:01) [GET]
+  [4;36;1mMessage Load (1.1ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.9ms)
+Rendered messages/_message (0.2ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:13:07) [GET]
+  [4;36;1mMessage Load (1.2ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (47.8ms)
+Rendered messages/_message (0.3ms)
+Completed in 114ms (View: 109, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:15) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:15', 'aa', '2009-05-21 13:13:15')[0m
+Rendered messages/_message (1.2ms)
+Completed in 24ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:13:32) [GET]
+  [4;36;1mMessage Load (1.1ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.9ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:35) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:35', 'aa', '2009-05-21 13:13:35')[0m
+Rendered messages/_message (0.5ms)
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:36) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:36', 'aa', '2009-05-21 13:13:36')[0m
+Rendered messages/_message (0.5ms)
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:37) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;35;1mMessage Create (0.5ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:37', 'aa', '2009-05-21 13:13:37')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:37) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:37', 'aa', '2009-05-21 13:13:37')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:37) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;35;1mMessage Create (0.3ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:37', 'aa', '2009-05-21 13:13:37')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:38) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;36;1mMessage Create (0.5ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:38', 'aa', '2009-05-21 13:13:38')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:38) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;35;1mMessage Create (0.3ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:38', 'aa', '2009-05-21 13:13:38')[0m
+Rendered messages/_message (0.4ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:38) [POST]
+  Parameters: {"message"=>"aa", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"aa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aa', '2009-05-21 13:13:38', 'aa', '2009-05-21 13:13:38')[0m
+Rendered messages/_message (0.5ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:13:42) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:13:42', 'rfraa', '2009-05-21 13:13:42')[0m
+Rendered messages/_message (0.5ms)
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:19:42) [GET]
+  [4;36;1mMessage Load (2.2ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (2.1ms)
+Rendered messages/_message (0.3ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.3ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.6ms)
+Rendered messages/_message (0.5ms)
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:19:44) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.5ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:19:44', 'rfraa', '2009-05-21 13:19:44')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:19:45) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:19:45', 'rfraa', '2009-05-21 13:19:45')[0m
+Rendered messages/_message (0.4ms)
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:20:26) [GET]
+  [4;35;1mMessage Load (2.1ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (2.0ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:20:28) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.7ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:20:28', 'rfraa', '2009-05-21 13:20:28')[0m
+Rendered messages/_message (0.3ms)
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:20:32) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.6ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:20:32', 'rfraa', '2009-05-21 13:20:32')[0m
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:20:35) [GET]
+  [4;36;1mMessage Load (2.3ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.9ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:21:36) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.6ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:21:36', 'rfraa', '2009-05-21 13:21:36')[0m
+Rendered messages/_message (0.4ms)
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:21:40) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:21:40', 'rfraa', '2009-05-21 13:21:40')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:21:48) [GET]
+  [4;35;1mMessage Load (3.4ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.8ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.3ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 16ms (View: 8, DB: 3) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:21:53) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:21:53', 'rfraa', '2009-05-21 13:21:53')[0m
+Rendered messages/_message (0.5ms)
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:21:55) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:21:55', 'rfraa', '2009-05-21 13:21:55')[0m
+Rendered messages/_message (0.5ms)
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:21:57) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:21:57', 'rfraa', '2009-05-21 13:21:57')[0m
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:21:58) [GET]
+  [4;35;1mMessage Load (2.6ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.9ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 16ms (View: 9, DB: 3) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:21:59) [POST]
+  Parameters: {"message"=>"aafff", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aafff', '2009-05-21 13:21:59', 'rfraa', '2009-05-21 13:21:59')[0m
+Rendered messages/_message (0.5ms)
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:22:06) [POST]
+  Parameters: {"message"=>"aaffffrr", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrr', '2009-05-21 13:22:06', 'rfraa', '2009-05-21 13:22:06')[0m
+Rendered messages/_message (0.3ms)
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:22:33) [GET]
+  [4;36;1mMessage Load (3.5ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.8ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.3ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.4ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 18ms (View: 10, DB: 4) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:22:35) [POST]
+  Parameters: {"message"=>"aaffffrr", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrr', '2009-05-21 13:22:35', 'rfraa', '2009-05-21 13:22:35')[0m
+Rendered messages/_message (0.3ms)
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:22:37) [POST]
+  Parameters: {"message"=>"aaffffrr", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrr', '2009-05-21 13:22:37', 'rfraa', '2009-05-21 13:22:37')[0m
+Rendered messages/_message (0.5ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:22:40) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:22:40', 'rfraa', '2009-05-21 13:22:40')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:24:59) [GET]
+  [4;36;1mMessage Load (3.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.9ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.3ms)
+Rendered messages/_message (0.7ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 18ms (View: 11, DB: 4) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:25:00) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:25:00', 'rfraa', '2009-05-21 13:25:00')[0m
+Rendered messages/_message (0.4ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:25:02) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:25:02', 'rfraa', '2009-05-21 13:25:02')[0m
+Rendered messages/_message (0.5ms)
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:25:06) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:25:06', 'rfraa', '2009-05-21 13:25:06')[0m
+Rendered messages/_message (0.5ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:25:08) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:25:08', 'rfraa', '2009-05-21 13:25:08')[0m
+Rendered messages/_message (0.6ms)
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:26:47) [GET]
+  [4;35;1mMessage Load (3.8ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.9ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.4ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 22ms (View: 14, DB: 4) | 200 OK [http://localhost/messages]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-21 15:26:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.core" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-21 15:26:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.highlight" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:27:08) [GET]
+  [4;36;1mMessage Load (3.2ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.9ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.3ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.7ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 20ms (View: 12, DB: 3) | 200 OK [http://localhost/messages]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-21 15:27:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.core" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-21 15:27:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.highlight" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:27:09) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:27:09', 'rfraa', '2009-05-21 13:27:09')[0m
+Rendered messages/_message (0.5ms)
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 15:31:40) [GET]
+  [4;36;1mMessage Load (3.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (98.6ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Rendered messages/_message (0.2ms)
+Completed in 128ms (View: 120, DB: 4) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:31:42) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:31:42', 'rfraa', '2009-05-21 13:31:42')[0m
+Rendered messages/_message (1.2ms)
+Completed in 23ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 15:31:54) [POST]
+  Parameters: {"message"=>"aaffffrrdede", "commit"=>"Submit!", "authenticity_token"=>"OV5gED07htQjBOSCZdCO2JD6Cr2brpWfN1XRtSqr1rY=", "author"=>"rfraa"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('aaffffrrdede', '2009-05-21 13:31:54', 'rfraa', '2009-05-21 13:31:54')[0m
+Rendered messages/_message (0.4ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/messages]

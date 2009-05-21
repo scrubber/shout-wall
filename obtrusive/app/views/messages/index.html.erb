@@ -1,0 +1,14 @@
+<h3 class="new-message-label">Enter new message!</h3>
+<% remote_form_for :message, :html => {:id => "message-form"} do |form| %>  
+  <dl>
+    <dt>Author:</dt>
+    <dd><%= text_field_tag 'author' %></dd>
+    <dt>Message:</dt>
+    <dd><%= text_area_tag 'message' %></dd>
+  </dl>
+  <%= submit_tag "Submit!", :id => "submit-button"%>
+<% end %>
+
+<div id="messages">
+  <%= render :partial => 'message', :collection => @messages %>
+</div>

@@ -1,0 +1,77 @@
+body {
+	background-color:#FFFFFF;
+	color:#333333;
+	font-family:"Lucida Grande",verdana,arial,helvetica,sans-serif;
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+	width:960px;
+}
+
+#messages {
+	text-align: left;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+
+#message-form {
+	text-align: left;
+}
+
+#message-form dl {
+	margin:10px 0 0 80px;
+}
+
+#message-form dd {
+color:#666666;
+font-size:11px;
+line-height:24px;
+margin:0 0 5px 80px;
+}
+
+#message-form dt {
+	float:left;
+	font-size:14px;
+	line-height:24px;
+	width:80px;
+  text-align: left;	
+}
+
+#author {
+  margin-right: 640px;
+}
+
+#message {
+  width: 600px;
+	height: 200px;
+  margin-right: 194px;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.first_row {
+  padding-bottom: 10px;
+}
+
+.message-meta {
+	font-size: 12px;
+}
+
+.author {
+  color: #FF5050;
+	font-weight: bold;
+}
+
+.new-message-label {
+  text-align: left;
+  padding-top: 30px;
+  margin-left: 80px;
+}
+
+#submit-button {
+  float : right;
+  margin-right: 195px;
+  margin-top: 10px;
+}

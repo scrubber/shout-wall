@@ -1,0 +1,2 @@
+page.insert_html :top, "messages", :partial => 'message', :object => @message
+page.visual_effect  :highlight, "message-#{@message.id}"

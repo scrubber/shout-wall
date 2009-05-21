@@ -1,0 +1,80 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMessages (20090519112939)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author" varchar(255), "message" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090519112939')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("messages")[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 13:58:00) [GET]
+  [4;36;1mMessage Load (1.3ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering messages/index
+Completed in 144ms (View: 119, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 13:58:46) [GET]
+  [4;35;1mMessage Load (0.8ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 13:58:52) [POST]
+  Parameters: {"message"=>"test", "commit"=>"Submit!", "authenticity_token"=>"hd2v8wUea/3hxtE0DTxQAIFF4qHqWm3Oy8sl/3yrAZk=", "author"=>"pet3r"}
+Rendering messages/create
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/messages/_message.html.erb:
+1: <div class="message" id="message-<%=message.id%>">
+2: 	<div class="message-meta">on <%= message.created_at.to_formatted_s(:long_ordinal) %>, <span class="author"><%= message.author %> </span> said:</div>
+3: 	<div><%= message.message %></div>
+4: </div>
+
+    app/views/messages/_message.html.erb:1
+    app/views/messages/create.js.rjs:1:in `__instance_exec0'
+    app/views/messages/create.js.rjs:1:in `_run_rjs_app47views47messages47create46js46rjs'
+
+Rendered rescues/_trace (55.8ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-05-21 14:00:03) [GET]
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 14:00:05) [POST]
+  Parameters: {"message"=>"test", "commit"=>"Submit!", "authenticity_token"=>"hd2v8wUea/3hxtE0DTxQAIFF4qHqWm3Oy8sl/3yrAZk=", "author"=>"pet3r"}
+  [4;35;1mMessage Create (16.6ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('test', '2009-05-21 12:00:05', 'pet3r', '2009-05-21 12:00:05')[0m
+Rendering messages/create
+Rendered messages/_message (152.0ms)
+Completed in 196ms (View: 158, DB: 17) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-05-21 14:00:11) [POST]
+  Parameters: {"message"=>"easy peasy", "commit"=>"Submit!", "authenticity_token"=>"hd2v8wUea/3hxtE0DTxQAIFF4qHqWm3Oy8sl/3yrAZk=", "author"=>"pet3r"}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('easy peasy', '2009-05-21 12:00:11', 'pet3r', '2009-05-21 12:00:11')[0m
+Rendering messages/create
+Rendered messages/_message (0.3ms)
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/messages]
