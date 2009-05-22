@@ -1,0 +1,343 @@
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:49:34', 'Test', '2009-05-21 16:49:34')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:49:34', 'Test', '2009-05-21 16:49:34')[0m
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:49:53', 'Test', '2009-05-21 16:49:53')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:49:53', 'Test', '2009-05-21 16:49:53')[0m
+  [4;36;1mMessage Load (0.8ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:50:14', 'Test', '2009-05-19 16:50:14')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:50:14', 'Test', '2009-05-20 16:50:14')[0m
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:50:18', 'Test', '2009-05-19 16:50:18')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:50:18', 'Test', '2009-05-20 16:50:18')[0m
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:54:11', 'Test', '2009-05-19 16:54:11')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:54:11', 'Test', '2009-05-20 16:54:11')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:54:11) [GET]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:54:15', 'Test', '2009-05-19 16:54:15')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:54:15', 'Test', '2009-05-20 16:54:15')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:54:15) [GET]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:54:28', 'Test', '2009-05-19 16:54:28')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:54:28', 'Test', '2009-05-20 16:54:28')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:54:28) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:56:33', 'Test', '2009-05-19 16:56:33')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:56:33', 'Test', '2009-05-20 16:56:33')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:56:33) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:56:52', 'Test', '2009-05-19 16:56:52')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:56:52', 'Test', '2009-05-20 16:56:52')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:56:52) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mMessage Create (0.7ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:58:16', 'Test', '2009-05-19 16:58:16')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:58:16', 'Test', '2009-05-20 16:58:16')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:58:16) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:58:43', 'Test', '2009-05-19 16:58:43')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:58:43', 'Test', '2009-05-20 16:58:43')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:58:43) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.7ms)
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 8, DB: 2) | 200 OK [http://test.host/messages]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:58:47', 'Test', '2009-05-19 16:58:47')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:58:47', 'Test', '2009-05-20 16:58:47')[0m
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:58:47', 'Test', '2009-05-19 16:58:47')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:58:47', 'Test', '2009-05-20 16:58:47')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:58:47) [GET]
+  [4;35;1mMessage Load (0.6ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.7ms)
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 8, DB: 3) | 200 OK [http://test.host/messages]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:59:51', 'Test', '2009-05-19 16:59:51')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:59:52', 'Test', '2009-05-20 16:59:51')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:59:52) [GET]
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.6ms)
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 8, DB: 2) | 200 OK [http://test.host/messages]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:59:59', 'Test', '2009-05-19 16:59:59')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:59:59', 'Test', '2009-05-20 16:59:59')[0m
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 16:59:59', 'Test', '2009-05-19 16:59:59')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 16:59:59', 'Test', '2009-05-20 16:59:59')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 17:59:59) [GET]
+  [4;35;1mMessage Load (0.6ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.8ms)
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 8, DB: 3) | 200 OK [http://test.host/messages]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:02:24', 'Test', '2009-05-19 17:02:24')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:02:24', 'Test', '2009-05-20 17:02:24')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 18:02:24) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.7ms)
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 8, DB: 2) | 200 OK [http://test.host/messages]
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:02:24', 'Test', '2009-05-19 17:02:24')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:02:24', 'Test', '2009-05-20 17:02:24')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create (for 0.0.0.0 at 2009-05-21 18:02:24) [POST]
+  Parameters: {"message"=>{"message"=>"Test Message", "author"=>"Test Submission"}}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:02:31', 'Test', '2009-05-19 17:02:31')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:02:31', 'Test', '2009-05-20 17:02:31')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create (for 0.0.0.0 at 2009-05-21 18:02:31) [POST]
+  Parameters: {"message"=>{"message"=>"Test Message", "author"=>"Test Submission"}}
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:03:05', 'Test', '2009-05-19 17:03:05')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:03:05', 'Test', '2009-05-20 17:03:05')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create (for 0.0.0.0 at 2009-05-21 18:03:05) [POST]
+  Parameters: {"message"=>{"message"=>"Test Message", "author"=>"Test Submission"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Test Message', '2009-05-21 17:03:05', 'Test Submission', '2009-05-21 17:03:05')[0m
+Redirected to http://test.host/messages
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/messages?message%5Bauthor%5D=Test+Submission&message%5Bmessage%5D=Test+Message]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:03:09', 'Test', '2009-05-19 17:03:09')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:03:09', 'Test', '2009-05-20 17:03:09')[0m
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:03:09', 'Test', '2009-05-19 17:03:09')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:03:09', 'Test', '2009-05-20 17:03:09')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 18:03:09) [GET]
+  [4;35;1mMessage Load (0.6ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.7ms)
+Rendered messages/_message (0.4ms)
+Completed in 11ms (View: 8, DB: 3) | 200 OK [http://test.host/messages]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:03:09', 'Test', '2009-05-19 17:03:09')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:03:09', 'Test', '2009-05-20 17:03:09')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create (for 0.0.0.0 at 2009-05-21 18:03:09) [POST]
+  Parameters: {"message"=>{"message"=>"Test Message", "author"=>"Test Submission"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Test Message', '2009-05-21 17:03:09', 'Test Submission', '2009-05-21 17:03:09')[0m
+Redirected to http://test.host/messages
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/messages?message%5Bauthor%5D=Test+Submission&message%5Bmessage%5D=Test+Message]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:15', 'Test', '2009-05-19 17:05:15')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:15', 'Test', '2009-05-20 17:05:15')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 18:05:15) [GET]
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.8ms)
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 8, DB: 2) | 200 OK [http://test.host/messages]
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:15', 'Test', '2009-05-19 17:05:15')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:15', 'Test', '2009-05-20 17:05:15')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create (for 0.0.0.0 at 2009-05-21 18:05:15) [POST]
+  Parameters: {"message"=>{"message"=>"Test Message", "author"=>"Test Submission"}}
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Test Message', '2009-05-21 17:05:15', 'Test Submission', '2009-05-21 17:05:15')[0m
+Redirected to http://test.host/messages
+Completed in 24ms (DB: 1) | 302 Found [http://test.host/messages?message%5Bauthor%5D=Test+Submission&message%5Bmessage%5D=Test+Message]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:15', 'Test', '2009-05-19 17:05:15')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:15', 'Test', '2009-05-20 17:05:15')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:05:15) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:05:15', 'Test Ajax', '2009-05-21 17:05:15')[0m
+Redirected to http://test.host/messages
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:53', 'Test', '2009-05-19 17:05:53')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:53', 'Test', '2009-05-20 17:05:53')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:05:53) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:05:53', 'Test Ajax', '2009-05-21 17:05:53')[0m
+Rendered messages/_message (3.2ms)
+Completed in 26ms (View: 21, DB: 2) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:57', 'Test', '2009-05-19 17:05:57')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:57', 'Test', '2009-05-20 17:05:57')[0m
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:57', 'Test', '2009-05-19 17:05:57')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:57', 'Test', '2009-05-20 17:05:57')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 18:05:57) [GET]
+  [4;35;1mMessage Load (0.6ms)[0m   [0mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.7ms)
+Rendered messages/_message (0.4ms)
+Completed in 12ms (View: 8, DB: 3) | 200 OK [http://test.host/messages]
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:57', 'Test', '2009-05-19 17:05:57')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:57', 'Test', '2009-05-20 17:05:57')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create (for 0.0.0.0 at 2009-05-21 18:05:57) [POST]
+  Parameters: {"message"=>{"message"=>"Test Message", "author"=>"Test Submission"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Test Message', '2009-05-21 17:05:57', 'Test Submission', '2009-05-21 17:05:57')[0m
+Redirected to http://test.host/messages
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/messages?message%5Bauthor%5D=Test+Submission&message%5Bmessage%5D=Test+Message]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:05:57', 'Test', '2009-05-19 17:05:57')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:05:57', 'Test', '2009-05-20 17:05:57')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:05:57) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:05:57', 'Test Ajax', '2009-05-21 17:05:57')[0m
+Rendered messages/_message (1.4ms)
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:18:08', 'Test', '2009-05-19 17:18:08')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:18:08', 'Test', '2009-05-20 17:18:08')[0m
+
+
+Processing MessagesController#index (for 0.0.0.0 at 2009-05-21 18:18:08) [GET]
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mSELECT * FROM "messages" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_message (1.7ms)
+Rendered messages/_message (0.4ms)
+Rendered layouts/_flash (0.7ms)
+Completed in 13ms (View: 9, DB: 2) | 200 OK [http://test.host/messages]
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:18:08', 'Test', '2009-05-19 17:18:08')[0m
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:18:08', 'Test', '2009-05-20 17:18:08')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create (for 0.0.0.0 at 2009-05-21 18:18:08) [POST]
+  Parameters: {"message"=>{"message"=>"Test Message", "author"=>"Test Submission"}}
+  [4;36;1mMessage Create (0.2ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Test Message', '2009-05-21 17:18:08', 'Test Submission', '2009-05-21 17:18:08')[0m
+Redirected to http://test.host/messages
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/messages?message%5Bauthor%5D=Test+Submission&message%5Bmessage%5D=Test+Message]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:18:08', 'Test', '2009-05-19 17:18:08')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:18:08', 'Test', '2009-05-20 17:18:08')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:18:08) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:18:08', 'Test Ajax', '2009-05-21 17:18:08')[0m
+Rendered messages/_message (1.5ms)
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:18:19', 'Test', '2009-05-19 17:18:19')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:18:19', 'Test', '2009-05-20 17:18:19')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:18:19) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:18:19', 'Test Ajax', '2009-05-21 17:18:19')[0m
+Rendered messages/_message (2.4ms)
+Completed in 15ms (View: 10, DB: 2) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:18:32', 'Test', '2009-05-19 17:18:31')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:18:32', 'Test', '2009-05-20 17:18:32')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:18:32) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:18:32', 'Test Ajax', '2009-05-21 17:18:32')[0m
+Rendered messages/_message (2.6ms)
+Completed in 15ms (View: 10, DB: 2) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:18:40', 'Test', '2009-05-19 17:18:40')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:18:40', 'Test', '2009-05-20 17:18:40')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:18:40) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:18:40', 'Test Ajax', '2009-05-21 17:18:40')[0m
+Rendered messages/_message (2.5ms)
+Completed in 15ms (View: 10, DB: 2) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-21 17:19:52', 'Test', '2009-05-19 17:19:52')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-21 17:19:52', 'Test', '2009-05-20 17:19:52')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-21 18:19:52) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-21 17:19:52', 'Test Ajax', '2009-05-21 17:19:52')[0m
+Rendered messages/_message (2.5ms)
+Completed in 15ms (View: 10, DB: 2) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-22 09:15:06', 'Test', '2009-05-20 09:15:06')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-22 09:15:06', 'Test', '2009-05-21 09:15:06')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-22 10:15:06) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-22 09:15:06', 'Test Ajax', '2009-05-22 09:15:06')[0m
+Rendered messages/_message (17.4ms)
+Completed in 42ms (View: 36, DB: 2) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 1', '2009-05-22 09:15:13', 'Test', '2009-05-20 09:15:13')[0m
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Message 2', '2009-05-22 09:15:13', 'Test', '2009-05-21 09:15:13')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m
+
+
+Processing MessagesController#create to js (for 0.0.0.0 at 2009-05-22 10:15:13) [POST]
+  Parameters: {"message"=>{"message"=>"Ajax Test", "author"=>"Test Ajax"}}
+  [4;35;1mMessage Create (0.2ms)[0m   [0mINSERT INTO "messages" ("message", "updated_at", "author", "created_at") VALUES('Ajax Test', '2009-05-22 09:15:13', 'Test Ajax', '2009-05-22 09:15:13')[0m
+Rendered messages/_message (2.4ms)
+Completed in 15ms (View: 10, DB: 2) | 200 OK [http://test.host/messages.js?message%5Bauthor%5D=Test+Ajax&message%5Bmessage%5D=Ajax+Test]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "messages" [0m

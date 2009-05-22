@@ -1,0 +1,8 @@
+<div class="message" id="<%= dom_id(message) %>">
+  <div class="message-meta">on
+    <%= message.created_at.to_formatted_s(:long_ordinal) %>,
+    <span class="author"><%= message.author %></span>
+    said:
+  </div>
+  <div><%= message.message %></div>
+</div>
