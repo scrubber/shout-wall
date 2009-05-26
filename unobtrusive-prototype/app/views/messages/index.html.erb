@@ -1,0 +1,15 @@
+<h3 class="new-message-label">Enter new message!</h3>
+<% form_for :message, :html => { :id => "message-form" } do |form| %>
+  <dl>
+    <dt>Author:</dt>
+    <dd><%= form.text_field :author %></dd>
+
+    <dt>Message:</dt>
+    <dd><%= form.text_area :message %></dd>
+  </dl>
+  <%= form.submit "Submit!", :id => "submit-button" %>
+<% end %>
+
+<div id="messages">
+  <%= render :partial => "message", :collection => @messages %>
+</div>
